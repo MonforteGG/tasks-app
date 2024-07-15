@@ -1,0 +1,24 @@
+# PyCharm
+backend/.idea/
+backend/*.iml
+backend/*.pyc
+backend/__pycache__/
+
+# Ignorar todos los __pycache__ en backend
+backend/**/__pycache__/
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/**/*.xml
+frontend/.cache/
+frontend/*.cache
+
+# Backend
+backend/node_modules/
+backend/.env
+backend/logs/
+backend/**/*.xml
+backend/.cache/
+backend/*.cache

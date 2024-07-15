@@ -8,19 +8,19 @@ import { AuthProvider } from './AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
-  return (
-      <AuthProvider>
-          <Router>
-              <Navbar />
-              <Routes>
-                  <Route path="/" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
-                  <Route path="/login" element={<Login />} />
-                  <Route path="/tasks/:id" element={<ProtectedRoute><TaskForm /></ProtectedRoute>} />
-                  <Route path="/tasks/new" element={<ProtectedRoute><TaskForm /></ProtectedRoute>} />
-              </Routes>
-          </Router>
-      </AuthProvider>
-  );
+    return (
+        <AuthProvider>
+            <Router>
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<ProtectedRoute><HomePage /></ProtectedRoute>} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/tasks/:id" element={<ProtectedRoute><TaskForm /></ProtectedRoute>} />
+                    <Route path="/tasks/new" element={<ProtectedRoute><TaskForm /></ProtectedRoute>} />
+                </Routes>
+            </Router>
+        </AuthProvider>
+    );
 }
 
 export default App;
