@@ -64,7 +64,6 @@ class UpdateTask(BaseModel):
 # USERS MODELS
 
 class User(BaseModel):
-    id: str
     username: str
     email: EmailStr
     password: str
